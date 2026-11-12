@@ -18,6 +18,8 @@ dates = pd.date_range(end=pd.Timestamp.today(), periods=num_days)
 sales = np.random.randint(100, 500, size=num_days)
 df = pd.DataFrame({"Date": dates, "Sales ($)": sales, "Category": category})
 
+st.write(df)
+
 # 4. Display Key Metrics
 col1, col2 = st.columns(2)
 col1.metric("Total Sales", f"${df['Sales ($)'].sum():,}")
