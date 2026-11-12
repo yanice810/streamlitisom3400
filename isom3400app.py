@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Title of the app
-st.title("ISOM")
+st.title("ISOM") #change this one will change the title of the data
 
 # Introduction text
 st.write("This dashboard helps visualize sales data over time.")
