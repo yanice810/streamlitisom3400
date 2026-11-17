@@ -2,7 +2,7 @@ import streamlit as st
 
 # Title and Header
 st.title("Reatail Business Dashboard")
-st.head("Manager Input Section")
+st.header("Manager Input Section")
 
 # Instruction
 st.write("Please enter the monthly sales target and select the region.")
