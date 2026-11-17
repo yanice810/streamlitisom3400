@@ -57,3 +57,12 @@ ax.set_xlabel("Month")
 ax.set_ylabel("Amount ($)")
 ax.legend()
 st.pyplot(fig)
+
+# -------------------------------
+# KPI Metrics
+# -------------------------------
+st.subheader("Key Metrics")
+col1, col2, col3 = st.columns(3)
+col1.metric("Total Sales", f"${filtered_data['Sales'].sum():,.0f}")
+col2.metric("Total Expenses", f"${filtered_data['Expenses'].sum():,.0f}")
+col3.metric("Profit", f"${(filtered_data['Sales'].sum() - filtered_data['Expenses'].sum()):,.0f}")
