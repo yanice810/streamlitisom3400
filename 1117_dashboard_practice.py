@@ -9,6 +9,11 @@ st.write("Please enter the monthly sales target and select the region.")
 
 
 # Number input for sales target
+sales = st.number_input("Enter Monthly Sales Target(in USD):",
+                      min_value=0,
+                      max_value=120,
+                      value=25)
+st.write(sales)
 
 
 
