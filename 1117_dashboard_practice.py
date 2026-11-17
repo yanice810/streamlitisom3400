@@ -22,7 +22,7 @@ st.write(sales)
 
 
 # Submit button
-if st.button("Submit"):
+#if st.button("Submit"):
     # Display entered values
 
 
