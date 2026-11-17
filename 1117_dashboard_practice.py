@@ -12,7 +12,7 @@ st.write("Please enter the monthly sales target and select the region.")
 sales = st.number_input("Enter Monthly Sales Target(in USD):",
                       min_value=0,
                       max_value=1000000,
-                      value=50000)
+                      value=50000) #呢個就係一開啟頁面時，輸入框預設顯示嘅數字
 st.write(sales)
 
 
