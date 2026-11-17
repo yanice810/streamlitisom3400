@@ -62,7 +62,7 @@ st.pyplot(fig)
 # KPI Metrics
 # -------------------------------
 st.subheader("Key Metrics")
-col1, col2, col3 = st.columns(3)
-col1.metric("Total Sales", f"${filtered_data['Sales'].sum():,.0f}")
+col1, col2, col3 = st.columns(3) #can change the how many column by yourself
+col1.metric("Total Sales", f"${filtered_data['Sales'].sum():,.0f}") #the "Total Sales" is the title
 col2.metric("Total Expenses", f"${filtered_data['Expenses'].sum():,.0f}")
 col3.metric("Profit", f"${(filtered_data['Sales'].sum() - filtered_data['Expenses'].sum()):,.0f}")
